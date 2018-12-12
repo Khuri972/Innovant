@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_share_resource"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Share Resource"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_get_sharable"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Get Sharable URL"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_download"
+        android:title="Download"
+        android:visible="true" />
+</menu>

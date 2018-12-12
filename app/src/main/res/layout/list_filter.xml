@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Category"
+                android:textColor="@color/text_color_name"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/category_spn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:textColor="@color/text_color_name"
+                android:textSize="14dp">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="From Date:"
+                android:textColor="@color/text_color_name"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/fromdate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Select From Date"
+                android:textColor="@color/text_color_name"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="To Date:"
+                android:textColor="@color/text_color_name"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/todate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Select To Date"
+                android:textColor="@color/text_color_name"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/buttion_login_background"
+                android:text="Cancel"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/clearbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/buttion_login_background"
+                android:text="Clear"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/setbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/buttion_login_background"
+                android:text="Set"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

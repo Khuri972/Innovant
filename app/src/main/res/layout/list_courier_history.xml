@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="courier No"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/courier_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="#004"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="Shipping date"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/shipping_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="06-08-2018"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="Delivred date"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/delivered_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="06-08-2018"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="Tracking No"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tracking_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="1265"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="Status"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Devivered"
+                            android:textColor="@color/text_color"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/courier_type"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:backgroundColor="@color/green"
+                    app:corner="rightTop"
+                    android:layout_gravity="right"
+                    app:labelBottomPadding="15dp"
+                    app:labelCenterPadding="10dp"
+                    app:labelTopPadding="20dp"
+                    app:primaryText="Reciver"
+                    app:primaryTextColor="@color/white"
+                    app:primaryTextSize="14sp"
+                    app:secondaryText=""
+                    app:secondaryTextColor="@color/colorPrimary"
+                    app:secondaryTextSize="18sp" />
+
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Sender Detail"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp"
+                        android:background="#eeeeeee1"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        android:id="@+id/sender_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Hardip"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/sender_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="hardip"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Reciver Detail"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:background="#eeeeeee1"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        android:id="@+id/reciver_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Jay"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/reciver_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="jay"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

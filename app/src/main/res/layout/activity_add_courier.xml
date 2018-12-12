@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashboard_header">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="1dp"
+            android:visibility="gone"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioSender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Sender" />
+
+                        <RadioButton
+                            android:id="@+id/radioReciver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Receiver" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/change_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- todo sender Details -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/sender_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:visibility="visible"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/sender_detail"
+                        android:textColor="@color/text_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/divider_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+
+                        <!-- todo Sender Company-->
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_input"
+                            app:hintTextAppearance="@style/TextLabel">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/input_sender_company"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/sender_company"
+                                android:inputType="text"
+                                android:textSize="@dimen/contact_txt_size"
+                                android:visibility="visible"></AutoCompleteTextView>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <!-- todo Sender Person-->
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_input"
+                            app:hintTextAppearance="@style/TextLabel">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/input_sender_person"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/sender_person"
+                                android:inputType="text"
+                                android:textSize="@dimen/contact_txt_size"
+                                android:visibility="visible"></AutoCompleteTextView>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sender_person_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- todo Person Name-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_sender_person_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/person_name"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo Person Name Mobile -->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_sender_person_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/person_mobile"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sender_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- todo mobile -->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <EditText
+                                    android:id="@+id/input_sender_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/mobile"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/contact_txt_size" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo sender address -->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_sender_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/Address"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textMultiLine"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo sender area-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_sender_area"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/area"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo city-->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/city_sender_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo district-->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/district_sender_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo state -->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/state_sender_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo country -->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/country_sender_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo pin-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <EditText
+                                    android:id="@+id/input_sender_pin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/pin"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/contact_txt_size" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo Zone-->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/zone_sender_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+                                <!-- todo  country -->
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/text_input"
+                                    app:hintTextAppearance="@style/TextLabel">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/input_sender_country"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/country"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:textSize="@dimen/contact_txt_size"
+                                        android:visibility="visible"></AutoCompleteTextView>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <!-- todo state -->
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/text_input"
+                                    app:hintTextAppearance="@style/TextLabel">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/input_sender_state"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/state"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:textSize="@dimen/contact_txt_size"
+                                        android:visibility="visible"></AutoCompleteTextView>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <!-- todo city-->
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/text_input"
+                                    app:hintTextAppearance="@style/TextLabel">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/input_sender_city"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/city"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:textSize="@dimen/contact_txt_size"
+                                        android:visibility="visible"></AutoCompleteTextView>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/label_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <ImageView
+                                android:id="@+id/addLabel"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/colorPrimary"
+                                android:src="@drawable/ic_add_white_24dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- todo reciver Details -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/reciver_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:visibility="visible"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/reciver_detail"
+                        android:textColor="@color/text_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/divider_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <!-- todo Reciver Company-->
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_input"
+                            app:hintTextAppearance="@style/TextLabel">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/input_reciver_company"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/reciver_company"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:textSize="@dimen/contact_txt_size"
+                                android:visibility="visible"></AutoCompleteTextView>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <!-- todo Reciver person -->
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_input"
+                            app:hintTextAppearance="@style/TextLabel">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/input_reciver_person"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/reciver_person"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:textSize="@dimen/contact_txt_size"
+                                android:visibility="visible"></AutoCompleteTextView>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/receiver_person_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- todo Person Name-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_receiver_person_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/person_name"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo Person Name Mobile -->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_receiver_person_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/person_mobile"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/reciver_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- todo mobile -->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <EditText
+                                    android:id="@+id/input_receiver_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/mobile"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/contact_txt_size" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo Reciver address -->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_receiver_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/Address"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textMultiLine"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo area-->
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_area"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_receiver_area"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/area"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/contact_txt_size"
+                                    android:visibility="visible"></AutoCompleteTextView>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo city-->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/city_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo district-->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/district_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo state -->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/state_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo country -->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/country_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- todo pin-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_input"
+                                app:hintTextAppearance="@style/TextLabel">
+
+                                <EditText
+                                    android:id="@+id/input_receiver_pin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/pin"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/contact_txt_size" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!-- todo Zone-->
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/zone_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_input" />
+
+                            <!-- remove-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <!-- todo Reciver country -->
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/text_input"
+                                    app:hintTextAppearance="@style/TextLabel">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/input_receiver_country"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/country"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:textSize="@dimen/contact_txt_size"
+                                        android:visibility="visible"></AutoCompleteTextView>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <!-- todo state -->
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/text_input"
+                                    app:hintTextAppearance="@style/TextLabel">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/input_receiver_state"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/state"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:textSize="@dimen/contact_txt_size"
+                                        android:visibility="visible"></AutoCompleteTextView>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <!-- todo city-->
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/text_input"
+                                    app:hintTextAppearance="@style/TextLabel">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/input_receiver_city"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/city"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:textSize="@dimen/contact_txt_size"
+                                        android:visibility="visible"></AutoCompleteTextView>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- todo percel Details -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="1dp"
+            android:visibility="visible"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/parcel_detail"
+                    android:textColor="@color/text_color"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/percel_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_input"
+                        app:ms_hint="Percel Type" />
+
+                    <!-- todo description -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_input"
+                        app:hintTextAppearance="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/input_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/description"
+                            android:inputType="text"
+                            android:textSize="@dimen/contact_txt_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- todo weight -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="@dimen/text_input"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/input_weight"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/weight"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:textSize="@dimen/contact_txt_size" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/text_input"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/input_weight_gm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/weight_gm"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:textSize="@dimen/contact_txt_size" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <!-- todo cost -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_input"
+                        app:hintTextAppearance="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/input_cost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cost"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:textSize="@dimen/contact_txt_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- todo shipping  Details -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="1dp"
+            android:visibility="visible"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/shipping_detail"
+                    android:textColor="@color/text_color"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <!-- todo courier company name -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_input"
+                        app:hintTextAppearance="@style/TextLabel">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/input_courier_company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/courier_company_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textSize="@dimen/contact_txt_size"
+                            android:visibility="visible"></AutoCompleteTextView>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- todo Pickup person -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_input"
+                        app:hintTextAppearance="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/input_pickup_person"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pickup_person"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textSize="@dimen/contact_txt_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- todo deliverd date -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_input"
+                        app:hintTextAppearance="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/input_deliverd_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/deliverd_date"
+                            android:textSize="@dimen/contact_txt_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- todo Pickup person -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_input"
+                        app:hintTextAppearance="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/input_tracking_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tracking_no"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textSize="@dimen/contact_txt_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/deliver_status_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_input"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

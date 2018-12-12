@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/new_folder_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Share with others"
+                android:textColor="@color/text_color"
+                android:textSize="16dp" />
+
+            <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                android:id="@+id/switch_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:activeBgColor="@color/colorPrimary"
+                custom:activeTextColor="@android:color/white"
+                custom:inactiveBgColor="@color/divider_color"
+                custom:textToggleLeft="Public"
+                custom:textToggleRight="Private"
+                custom:toggleWidth="70dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Anyone with link can access resource"
+            android:textColor="@color/text_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/copyLinkTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextview_background"
+            android:padding="10dp"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <com.innovent.erp.custom.MultiSelectionSpinnerPeople
+            android:id="@+id/spinner_people"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextview_background"></com.innovent.erp.custom.MultiSelectionSpinnerPeople>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/copyLinkBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttion_login_background"
+                android:text="Copy Link"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttion_login_background"
+                android:text="Close"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

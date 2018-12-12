@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/order_history"
+            android:title="My Contacts" />
+
+        <item
+            android:id="@+id/nav_document"
+            android:icon="@drawable/document"
+            android:title="My Document" />
+        <item
+            android:id="@+id/nav_courier"
+            android:icon="@drawable/couriers"
+            android:title="Couriers" />
+
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/task"
+            android:title="My Task" />
+
+        <item
+            android:id="@+id/nav_today_task"
+            android:icon="@drawable/task"
+            android:title="Today`s Task" />
+
+        <item
+            android:id="@+id/nav_cheque"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Create Cheque" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_tutoral"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            android:title="Reset Tutoral" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Utility">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_digital_visitors"
+                    android:icon="@drawable/document"
+                    android:title="Visitor Book" />
+
+                <item
+                    android:id="@+id/nav_schedule"
+                    android:icon="@drawable/schedual"
+                    android:title="Schedule With Reminder" />
+
+                <item
+                    android:id="@+id/nav_reception"
+                    android:icon="@drawable/reception"
+                    android:title="Reception" />
+
+                <item
+                    android:id="@+id/nav_gst_calculate"
+                    android:icon="@drawable/gst_calculator"
+                    android:title="GST Calculator" />
+
+                <item
+                    android:id="@+id/nav_notes"
+                    android:icon="@drawable/document"
+                    android:title="Notes" />
+
+                <item
+                    android:id="@+id/nav_music"
+                    android:icon="@drawable/ic_library_music_white_24dp"
+                    android:title="Music" />
+
+                <item
+                    android:id="@+id/nav_converter"
+                    android:icon="@drawable/ic_monetization_on_black_24dp"
+                    android:title="Converter" />
+
+                <item
+                    android:id="@+id/nav_currency"
+                    android:icon="@drawable/ic_currency"
+                    android:title="Currency Calculator" />
+
+                <item
+                    android:id="@+id/nav_catalogue"
+                    android:icon="@drawable/ic_perm_media_white_24dp"
+                    android:title="Digital Catalogue" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/transparent</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="fabIpPrinter">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/red</item>
+        <item name="fab_colorPressed">@color/red</item>
+    </style>
+
+    <style name="fabNewtworkPrinter">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/yellow</item>
+        <item name="fab_colorPressed">@color/yellow</item>
+    </style>
+
+    <style name="complain">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/blue</item>
+        <item name="fab_colorPressed">@color/blue</item>
+    </style>
+
+    <style name="installation">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/green</item>
+        <item name="fab_colorPressed">@color/green</item>
+    </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="GreenTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/divider_color</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- app:hintTextAppearance="@style/GreenTextInputLayout" -->
+
+    <!-- todo music -->
+    <!-- button style-->
+    <style name="btn_style">
+        <item name="android:background">@color/app_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">@dimen/btn_margin</item>
+    </style>
+
+    <style name="music_detail_style">
+        <item name="android:background">@color/app_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="music_category_style_textview">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

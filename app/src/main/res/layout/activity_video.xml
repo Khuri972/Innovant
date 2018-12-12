@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.innovent.erp.custom.FullScreenVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/login_txt"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:textSize="16sp"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttion_login_background"/>
+
+</FrameLayout>

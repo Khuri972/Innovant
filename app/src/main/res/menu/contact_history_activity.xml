@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Filter"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_sync_white_24dp"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_pdf"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Export PDF"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_excel"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Export Excel"
+        app:showAsAction="never" />
+
+</menu>

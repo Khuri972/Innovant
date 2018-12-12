@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "616133270567",
+    "firebase_url": "https://innovent-febbb.firebaseio.com",
+    "project_id": "innovent-febbb",
+    "storage_bucket": "innovent-febbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616133270567:android:8bd4776a184afdfa",
+        "android_client_info": {
+          "package_name": "com.innovent.erp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616133270567-cf33lmqlhdg2255dif7uc6aaqegl2g3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiLjlhMcFQIP3BI-hrWcKfoMI0pR8h4eI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

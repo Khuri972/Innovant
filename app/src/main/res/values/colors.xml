@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49342b</color>
+    <color name="colorPrimaryDark">#49342b</color>
+    <color name="colorAccent">#49342b</color>
+
+    <color name="black">#000000</color>
+    <color name="text_color">#000000</color>
+    <color name="gray">#e4e4e4</color> <!-- #9a9795 -->
+    <color name="divider_color">#9a9795</color>
+    <color name="white">#ffffff</color>
+    <color name="dashboard_header">#e4e4e4</color> <!-- f6f7fe -->
+    <color name="transparent">#00000000</color> <!-- f6f7fe -->
+    <color name="text_color_name">#606062</color>
+
+    <!-- dashboard tile color -->
+    <color name="dash_border">#ef7f1a</color>
+    <color name="cal_background">#000</color>
+
+    <!-- toaster color-->
+    <color name="yellow">#ffb031</color>
+    <color name="green">#197b30</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0c08d8</color>
+
+    <color name="all">#fd0ea2e6</color>
+    <color name="pdf">#d40808</color>
+    <color name="excel">#035316</color>
+    <color name="task_more">#808080</color>
+
+    <color name="sales_management">#197b30</color>
+    <color name="employment_management">#FF4680DA</color>
+    <color name="help_desk">#C62828</color>
+
+
+    <!-- todo music -->
+    <color name="app_color">#a94485</color>
+    <color name="common_bg">#e5e5e5</color>
+    <color name="black_transparent">#33000000</color>
+    <color name="white_transparent">#eeeeee</color>
+
+</resources>
