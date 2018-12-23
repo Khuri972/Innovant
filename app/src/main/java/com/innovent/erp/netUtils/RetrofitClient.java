@@ -16,16 +16,16 @@ public class RetrofitClient {
 
     private static Retrofit retrofit = null;
     private static Retrofit retrofit_erp = null;
-    public static String service_url = "http://24.24.25.215/cdms_erp1/service/";
-    //public static String service_url = "http://craftbox.in/server/innovant/service/";
+    public static String service_url = "";
+    
 
-    public static String video_url = "http://logixx.in/Freedom_video.mp4";
+    public static String video_url = "";
     public static String message_pack_name = "LOGIXX";
 
     /* todo erp link */
 
-   // public static String service_url_erp = "http://24.24.25.215/cdms_erp1/service/";
-    //public static String service_url_erp = "http://craftbox.in/server/innovant/service/";
+   // public static String service_url_erp = "";
+    //public static String service_url_erp = "";
 
     public static Retrofit getClient() {
         if (retrofit == null) {
